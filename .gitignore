@@ -1,0 +1,22 @@
+chromium/
+Code/
+Code - OSS/
+dconf/
+discord/
+Electron/
+fish/
+gtk-2.0/
+gtk-3.0/
+htop/
+libfm/
+microsoft-edge-dev/
+neofetch/
+nitrogen/
+pacmanfm/
+polybar/
+pulse/
+rofi/
+spotify/
+volumeicon/
+/mimeapps.list
+/pavucontrol.ini
