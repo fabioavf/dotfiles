@@ -1,4 +1,4 @@
-" This line makes pacman-installed global Arch Linux vim packages work.
-source /usr/share/nvim/archlinux.vim
-
 set number
+set tabstop=4
+set shiftwidth=4
+set expandtab
