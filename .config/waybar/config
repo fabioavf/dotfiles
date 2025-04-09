@@ -1,0 +1,177 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 8,
+    "margin-top": 4,
+    "margin-left": 12,
+    "margin-right": 12,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/separator",
+        "hyprland/window"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "cpu",
+        "memory",
+        "custom/separator",
+        "network",
+        "custom/separator",
+        "custom/audio-switcher",
+        "pulseaudio",
+        "custom/separator",
+        "custom/keyboard-layout",
+        "custom/separator",
+        "tray"
+    ],
+
+    "custom/separator": {
+        "format": "•",
+        "interval": "once",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "all-outputs": false,
+        "format-icons": {
+            "1": "󰲠",
+            "2": "󰲢",
+            "3": "󰲤",
+            "4": "󰲦",
+            "5": "󰲨",
+            "6": "󰲪",
+            "7": "󰲬",
+            "8": "󰲮",
+            "9": "󰲰",
+            "10": "󰿬"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 40,
+        "separate-outputs": true
+    },
+
+    "custom/keyboard-layout": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 1,
+        "exec": "~/.config/waybar/scripts/keyboard-layout.sh",
+        "on-click": "~/.config/waybar/scripts/keyboard-layout.sh toggle",
+        "tooltip": true
+    },
+
+    "tray": {
+        "spacing": 8,
+        "icon-size": 16
+    },
+
+    "clock": {
+        "format": "󰅐 {:%H:%M}",
+        "format-alt": "󰃭 {:%A, %B %d, %Y}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "on-scroll": 1
+        },
+        "actions": {
+            "on-click": "mode",
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "cpu": {
+        "format": "󰘚 {usage}%",
+        "tooltip": true,
+        "on-click": "alacritty -e htop",
+        "interval": 5
+    },
+
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "tooltip-format": "{used:0.1f}GB / {total:0.1f}GB used",
+        "on-click": "alacritty -e htop",
+        "interval": 5
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["󱃃", "󰔏", "󱃂"],
+        "tooltip": true,
+        "interval": 5
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": true,
+        "interval": 10
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {essid}",
+        "format-ethernet": "󰈀 Connected",
+        "format-disconnected": "󰖪 Disconnected",
+        "tooltip-format-wifi": "󰖩 {essid} ({signalStrength}%)\n󰩟 {ipaddr}\n⬆️ {bandwidthUpBytes} ⬇️ {bandwidthDownBytes}",
+        "tooltip-format-ethernet": "󰈀 Ethernet\n󰩟 {ipaddr}\n⬆️ {bandwidthUpBytes} ⬇️ {bandwidthDownBytes}",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor",
+        "interval": 5
+    },
+
+    "custom/audio-switcher": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 5,
+        "exec": "~/.config/waybar/scripts/audio-switcher.sh",
+        "on-click": "~/.config/waybar/scripts/audio-switcher.sh switch",
+        "tooltip": true
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-muted": "󰝟",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": "󰍭",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "󰏲",
+            "portable": "󰓃",
+            "car": "󰄋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "tooltip": true
+    }
+}

@@ -1,0 +1,122 @@
+:root {
+    --spice-text: #e8f0e3;
+    --spice-subtext: #7bc75f;
+    --spice-main: #1a2621;
+    --spice-sidebar: #142319;
+    --spice-player: #142319;
+    --spice-card: #1a2621;
+    --spice-shadow: #0e1915;
+    --spice-selected-row: #2d4734;
+    --spice-button: #5da247;
+    --spice-button-active: #3a785a;
+    --spice-button-disabled: #334939;
+    --spice-tab-active: #5da247;
+    --spice-notification: #4b9972;
+    --spice-notification-error: #a54226;
+    --spice-highlight: #7bc75f;
+    --spice-highlight-elevated: #8a9673;
+    --border-radius: 10px;
+}
+
+/* Round corners for elements */
+.main-nowPlayingView-nowPlayingWidget,
+.main-topBar-historyButtons .main-topBar-button,
+.main-topBar-buddyFeed,
+.main-entityHeader-shadow,
+.main-entityHeader-overlay,
+.main-entityHeader-backgroundColor,
+.main-playButton-PlayButton,
+.x-downloadButton-button,
+.main-playPauseButton-button,
+.main-addButton-button {
+    border-radius: var(--border-radius) !important;
+}
+
+/* Cards and playlist items */
+.main-card-card,
+.main-contextMenu-menu,
+.main-trackList-trackList .main-trackList-trackListRow,
+.main-trackList-trackListHeader {
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.main-card-card:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 16px rgba(14, 25, 21, 0.3);
+}
+
+/* Player */
+.main-nowPlayingWidget-nowPlaying {
+    background-color: var(--spice-player);
+    border-radius: var(--border-radius);
+    padding: 8px;
+}
+
+/* Progress bar */
+.progress-bar {
+    --progress-bar-height: 4px;
+    --progress-bar-radius: 2px;
+}
+
+.progress-bar__bg,
+.progress-bar__fg {
+    border-radius: var(--progress-bar-radius);
+    height: var(--progress-bar-height);
+}
+
+.progress-bar__fg {
+    background-color: var(--spice-button);
+}
+
+.progress-bar__bg {
+    background-color: var(--spice-selected-row);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--spice-selected-row);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--spice-button);
+}
+
+/* Buttons */
+button.main-playButton-PlayButton {
+    background-color: var(--spice-button) !important;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button.main-playButton-PlayButton:hover {
+    background-color: var(--spice-button-active) !important;
+    transform: scale(1.05);
+}
+
+/* Sidebar refinements */
+.main-navBar-navBar {
+    background-color: var(--spice-sidebar);
+    border-radius: var(--border-radius);
+    margin: 8px;
+    padding-top: 8px;
+}
+
+.main-rootlist-rootlistItemLink {
+    border-radius: calc(var(--border-radius) - 2px);
+}
+
+/* Active elements */
+.main-navBar-navBarLinkActive {
+    background: var(--spice-selected-row);
+    border-radius: 6px;
+}

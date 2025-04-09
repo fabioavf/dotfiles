@@ -1,0 +1,5 @@
+" Set the color scheme
+colorscheme forest-green
+
+" Enable true colors support
+set termguicolors
