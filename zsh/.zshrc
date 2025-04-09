@@ -132,3 +132,6 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -s "/home/fabio/.jabba/jabba.sh" ] && source "/home/fabio/.jabba/jabba.sh"
 alias dotfiles='git --git-dir=/home/fabio/.dotfiles/ --work-tree=/home/fabio'
+
+[ "$(hostname)" = "fabioEndeavour" ] && export HYPRLAND_MACHINE="pc"
+[ "$(hostname)" = "fabiosMacbook" ] && export HYPRLAND_MACHINE="macbook"
