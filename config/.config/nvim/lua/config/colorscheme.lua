@@ -1,5 +1,5 @@
 -- Set up colorscheme
-vim.cmd.colorscheme "forest-green"
+vim.cmd.colorscheme "amber-sands"
 
 -- Make background transparent
 vim.api.nvim_create_autocmd("ColorScheme", {

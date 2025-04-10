@@ -1,0 +1,216 @@
+:root {
+    --amber-sands-bg: #1a140c;
+    --amber-sands-bg-dark: #19150e;
+    --amber-sands-bg-light: #231914;
+    --amber-sands-gold: #d79921;
+    --amber-sands-bright-gold: #fabd2f;
+    --amber-sands-amber: #b57614;
+    --amber-sands-brown: #78593a;
+    --amber-sands-bg-highlight: #473419;
+    --amber-sands-text: #f5e6c9;
+    --amber-sands-text-secondary: #e5d6b9;
+    --spice-button: var(--amber-sands-gold);
+    --spice-button-active: var(--amber-sands-bright-gold);
+    --spice-button-disabled: #665133;
+    --spice-tab-active: var(--amber-sands-gold);
+    --spice-notification: var(--amber-sands-gold);
+    --spice-notification-error: #d14f35;
+    --spice-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--amber-sands-bg-highlight);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--amber-sands-gold);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--amber-sands-bg-dark);
+}
+
+/* Rounded corners for album art and cards */
+.main-coverSlotCollapsed-container,
+.main-coverSlotExpanded-container,
+.main-entityHeader-imageContainer,
+.main-entityHeader-image,
+.main-card-imageContainer,
+.main-card-image,
+.x-entityImage-image,
+.x-entityImage-imageContainer,
+.view-homeShortcutsGrid-image {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+/* Playlist covers and album art */
+.main-coverSlotCollapsed-container,
+.main-coverSlotExpanded-container,
+.x-entityImage-imageContainer {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Highlight active elements */
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle,
+.main-trackList-trackListRow.main-trackList-active
+    .main-trackList-rowSongAlbum {
+    color: var(--amber-sands-gold) !important;
+}
+
+/* Player bar styling */
+.main-playPauseButton-button {
+    background-color: var(--amber-sands-gold) !important;
+    color: var(--amber-sands-bg-dark) !important;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.main-playPauseButton-button:hover {
+    background-color: var(--amber-sands-bright-gold) !important;
+    transform: scale(1.08);
+}
+
+/* Progress bar styling */
+.progress-bar {
+    --fg-color: var(--amber-sands-gold) !important;
+    --bg-color: var(--amber-sands-bg-light) !important;
+}
+
+.progress-bar:hover {
+    --fg-color: var(--amber-sands-bright-gold) !important;
+}
+
+.progress-bar .progress-bar__slider {
+    background-color: var(--amber-sands-text) !important;
+}
+
+/* Volume bar styling */
+.main-connectBar-connectBar {
+    background-color: var(--amber-sands-bg-highlight) !important;
+    border-radius: 8px !important;
+}
+
+/* Enhance buttons with animations */
+button:not(.main-playPauseButton-button) {
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease !important;
+}
+
+button:not(.main-playPauseButton-button):hover {
+    transform: translateY(-1px) !important;
+}
+
+button:not(.main-playPauseButton-button):active {
+    transform: translateY(1px) !important;
+}
+
+/* Add subtle gradient to background */
+.Root__main-view {
+    background: linear-gradient(
+        135deg,
+        var(--amber-sands-bg) 0%,
+        var(--amber-sands-bg-dark) 100%
+    ) !important;
+}
+
+/* Create depth for cards */
+.main-card-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease !important;
+}
+
+.main-card-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Gold accents for featured content */
+.main-heroCard-card,
+.main-home-homeHeader {
+    background: linear-gradient(
+        135deg,
+        var(--amber-sands-bg-highlight) 0%,
+        var(--amber-sands-bg-dark) 100%
+    ) !important;
+    border-radius: 10px !important;
+}
+
+/* Highlight current sidebar item with left border */
+.main-navBar-navBarLinkActive {
+    position: relative;
+}
+
+.main-navBar-navBarLinkActive::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--amber-sands-gold);
+    border-radius: 0 2px 2px 0;
+}
+
+/* Style headers */
+.main-entityHeader-title h1,
+.main-entityHeader-titleButton {
+    color: var(--amber-sands-gold) !important;
+    font-weight: 700 !important;
+}
+
+/* Custom styling for playlist buttons */
+.main-actionBar-ActionBarRow button {
+    border-radius: 20px !important;
+}
+
+/* Improve readability of lyrics */
+.lyrics-lyricsContent-text {
+    color: var(--amber-sands-text) !important;
+    font-size: 1.1em !important;
+    line-height: 1.6 !important;
+}
+
+.lyrics-lyricsContent-highlighted {
+    color: var(--amber-sands-gold) !important;
+    font-weight: bold !important;
+}
+
+/* Sand ripples decorative element for empty states */
+.EmptyState {
+    position: relative;
+    overflow: hidden;
+}
+
+.EmptyState::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        45deg,
+        var(--amber-sands-bg-highlight) 25%,
+        transparent 25%,
+        transparent 50%,
+        var(--amber-sands-bg-highlight) 50%,
+        var(--amber-sands-bg-highlight) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 20px 20px;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+}

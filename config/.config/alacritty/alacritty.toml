@@ -4,89 +4,70 @@ opacity = 0.85
 title = "Alacritty"
 dynamic_title = true
 startup_mode = "Windowed"
-
   [window.dimensions]
   columns = 80
   lines = 24
-
   [window.padding]
   x = 12
   y = 12
-
   [window.class]
   instance = "Alacritty"
   general = "Alacritty"
-
 [scrolling]
 history = 10_000
 multiplier = 3
-
 [font]
 size = 12
-
   [font.normal]
   family = "JetBrainsMono Nerd Font"
   style = "Regular"
-
   [font.bold]
   family = "JetBrainsMono Nerd Font"
   style = "Bold"
-
   [font.italic]
   family = "JetBrainsMono Nerd Font"
   style = "Italic"
-
   [font.bold_italic]
   family = "JetBrainsMono Nerd Font"
   style = "Bold Italic"
-
   [font.offset]
   x = 0
   y = 0
-
   [font.glyph_offset]
   x = 0
   y = 0
-
 [colors.primary]
-background = "#1a2621"
-foreground = "#e8f0e3"
-
+background = "#1a140c"
+foreground = "#f5e6c9"
 [colors.cursor]
-text = "#1a2621"
-cursor = "#5da247"
-
+text = "#1a140c"
+cursor = "#d79921"
 [colors.selection]
-text = "#e8f0e3"
-background = "#2d4734"
-
+text = "#f5e6c9"
+background = "#473419"
 [colors.normal]
-black = "#1a2621"
+black = "#1a140c"
 red = "#a54226"
-green = "#5da247"
-yellow = "#9c8726"
-blue = "#2d4734"
-magenta = "#6b735a"
-cyan = "#3a785a"
-white = "#e8f0e3"
-
+green = "#b57614"
+yellow = "#d79921"
+blue = "#473419"
+magenta = "#735a6b"
+cyan = "#78593a"
+white = "#f5e6c9"
 [colors.bright]
-black = "#334939"
+black = "#493626"
 red = "#d14f35"
-green = "#7bc75f"
-yellow = "#e5cd33"
-blue = "#3d6046"
-magenta = "#8a9673"
-cyan = "#4b9972"
-white = "#f4f9f0"
-
+green = "#d5971a"
+yellow = "#fabd2f"
+blue = "#665133"
+magenta = "#907389"
+cyan = "#987346"
+white = "#fdf4e3"
 [cursor]
 blink_interval = 750
 unfocused_hollow = true
-
   [cursor.style]
   shape = "Block"
   blinking = "On"
-
 [mouse]
 hide_when_typing = true
