@@ -150,6 +150,7 @@
     "exec": "~/.config/waybar/scripts/audio-switcher.sh",
     "on-click": "~/.config/waybar/scripts/audio-switcher.sh switch",
     "tooltip": true,
+    "signal": 1, // Add this line to listen for the RTMIN+1 signal
   },
 
   "pulseaudio": {

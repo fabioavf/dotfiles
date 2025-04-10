@@ -1,0 +1,45 @@
+# Mako configuration file - Forest Green Theme
+
+# Notification styling
+background-color=#1a2621E6
+text-color=#e8f0e3
+border-color=#5da247
+border-size=2
+border-radius=10
+progress-color=over #5da247
+
+# Layout
+width=350
+height=100
+margin=30
+padding=15
+icons=1
+max-icon-size=48
+icon-location=left
+
+# Text formatting
+format=<b>%s</b>\n%b
+text-alignment=left
+default-timeout=5000
+font=JetBrainsMono Nerd Font 11
+
+# Additional styling
+markup=1
+actions=1
+history=1
+max-visible=5
+layer=overlay
+
+# Criteria-based styling (examples)
+[urgency=low]
+border-color=#3a785a
+default-timeout=4000
+
+[urgency=normal]
+border-color=#5da247
+default-timeout=5000
+
+[urgency=high]
+border-color=#a54226
+background-color=#1a2621EE
+default-timeout=0

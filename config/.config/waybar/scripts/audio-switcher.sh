@@ -38,8 +38,9 @@ switch_sink() {
                 pactl move-sink-input "$stream" "$next_sink"
             done
 
-            # Wait a moment for the change to take effect
-            sleep 0.5
+            # Signal waybar to update immediately
+            pkill -RTMIN+1 waybar
+
             break
         fi
     done
@@ -47,9 +48,6 @@ switch_sink() {
 
 # Format output for waybar
 format_output() {
-    # Force a refresh of PulseAudio information
-    pactl info > /dev/null
-
     current_sink=$(get_default_sink)
     sink_name=$(get_sink_name "$current_sink")
 
@@ -91,8 +89,6 @@ format_output() {
 # Main execution
 if [[ "$1" == "switch" ]]; then
     switch_sink
-    # Add a small delay to ensure PulseAudio state is updated
-    sleep 0.5
     # Output the updated information after switching
     format_output
 else
