@@ -127,6 +127,9 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_STYLE_OVERRIDE=fusion
 export QT_QPA_PLATFORMTHEME=qt6ct
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export DEVKITPPC=/opt/devkitpro/devkitPPC
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -135,3 +138,6 @@ alias dotfiles='git --git-dir=/home/fabio/.dotfiles/ --work-tree=/home/fabio'
 
 [ "$(hostname)" = "fabioEndeavour" ] && export HYPRLAND_MACHINE="pc"
 [ "$(hostname)" = "fabiosMacbook" ] && export HYPRLAND_MACHINE="macbook"
+
+# Created by `pipx` on 2025-04-12 04:26:25
+export PATH="$PATH:/home/fabio/.local/bin"
