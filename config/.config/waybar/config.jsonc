@@ -141,7 +141,7 @@
         "tooltip-format-wifi": "󰖩 {essid} ({signalStrength}%)\n󰩟 {ipaddr}\n⬆️ {bandwidthUpBytes} ⬇️ {bandwidthDownBytes}",
         "tooltip-format-ethernet": "󰈀 Ethernet\n󰩟 {ipaddr}\n⬆️ {bandwidthUpBytes} ⬇️ {bandwidthDownBytes}",
         "tooltip-format-disconnected": "Disconnected",
-        "on-click": "nm-connection-editor",
+        "on-click": "impala",
         "interval": 5
     },
 
