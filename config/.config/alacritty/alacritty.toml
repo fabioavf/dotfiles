@@ -37,32 +37,32 @@ size = 12
   x = 0
   y = 0
 [colors.primary]
-background = "#1a140c"
-foreground = "#f5e6c9"
+background = "#0a2c30"
+foreground = "#e6f5f7"
 [colors.cursor]
-text = "#1a140c"
-cursor = "#d79921"
+text = "#0a2c30"
+cursor = "#3a9eaa"
 [colors.selection]
-text = "#f5e6c9"
-background = "#473419"
+text = "#e6f5f7"
+background = "#1a5e63"
 [colors.normal]
-black = "#1a140c"
-red = "#a54226"
-green = "#b57614"
-yellow = "#d79921"
-blue = "#473419"
-magenta = "#735a6b"
-cyan = "#78593a"
-white = "#f5e6c9"
+black = "#0a2c30"
+red = "#a5424a"
+green = "#257d87"
+yellow = "#3a9eaa"
+blue = "#1a5e63"
+magenta = "#7390aa"
+cyan = "#3a5e78"
+white = "#e6f5f7"
 [colors.bright]
-black = "#493626"
-red = "#d14f35"
-green = "#d5971a"
-yellow = "#fabd2f"
-blue = "#665133"
-magenta = "#907389"
-cyan = "#987346"
-white = "#fdf4e3"
+black = "#12404a"
+red = "#d14f5a"
+green = "#3ca9aa"
+yellow = "#83c5d2"
+blue = "#2d7d87"
+magenta = "#7390aa"
+cyan = "#6189a4"
+white = "#f0fafb"
 [cursor]
 blink_interval = 750
 unfocused_hollow = true

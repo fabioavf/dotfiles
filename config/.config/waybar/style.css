@@ -6,20 +6,17 @@
     font-size: 13px;
     font-weight: 500;
 }
-
 window#waybar {
     /* Rounded background for the entire bar */
-    background-color: rgba(26, 20, 12, 0.75);
-    color: #f5e6c9;
+    background-color: rgba(9, 30, 36, 0.75);
+    color: #e6f5f7;
     border-radius: 12px;
     transition: all 0.3s ease;
     border-bottom: none;
 }
-
 window#waybar.hidden {
     opacity: 0.2;
 }
-
 /* Base styles for all buttons and modules */
 #workspaces,
 #window,
@@ -43,9 +40,8 @@ window#waybar.hidden {
     margin: 4px 0;
     border-radius: 8px;
     transition: all 0.3s ease;
-    color: #f5e6c9;
+    color: #e6f5f7;
 }
-
 /* Group styling */
 #custom-groups-system,
 #custom-groups-audio,
@@ -54,7 +50,6 @@ window#waybar.hidden {
     padding: 0;
     margin: 0;
 }
-
 /* Hover effect for groups */
 #custom-groups-system:hover #cpu,
 #custom-groups-system:hover #memory,
@@ -63,36 +58,28 @@ window#waybar.hidden {
 #custom-groups-audio:hover #custom-audio-switcher,
 #custom-groups-audio:hover #pulseaudio,
 #custom-groups-network:hover #network {
-    background-color: rgba(51, 35, 17, 0.7);
+    background-color: rgba(18, 64, 74, 0.7);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 /* Separator styling */
 #custom-separator {
-    color: rgba(215, 153, 33, 0.6);
+    color: rgba(58, 158, 170, 0.6);
     font-size: 15px;
     padding: 0 4px;
     margin: 0;
     background: transparent;
 }
-
 /* Workspaces styling */
 #workspaces {
-    background-color: rgba(
-        26,
-        20,
-        12,
-        0.75
-    ); /* Match the main bar background */
+    background-color: rgba(9, 30, 36, 0.75); /* Match the main bar background */
     margin-right: 8px;
     padding: 0 4px;
     border-radius: 10px;
 }
-
 #workspaces button {
     padding: 0 6px;
     background-color: transparent;
-    color: #f5e6c9;
+    color: #e6f5f7;
     border: none;
     border-radius: 8px;
     min-width: 22px;
@@ -100,200 +87,166 @@ window#waybar.hidden {
     transition: all 0.3s ease;
     margin: 2px;
 }
-
 #workspaces button:hover {
-    background: rgba(215, 153, 33, 0.3);
-    box-shadow: inset 0 -2px #d79921;
+    background: rgba(58, 158, 170, 0.3);
+    box-shadow: inset 0 -2px #3a9eaa;
 }
-
 #workspaces button.active {
     background-color: rgba(
-        71,
-        52,
-        25,
+        26,
+        94,
+        99,
         0.85
-    ); /* Deeper amber for active workspace */
-    box-shadow: inset 0 -2px #d79921;
+    ); /* Deeper teal for active workspace */
+    box-shadow: inset 0 -2px #3a9eaa;
     color: #ffffff;
     font-weight: bold;
 }
-
 #workspaces button.urgent {
-    background-color: rgba(165, 66, 38, 0.7);
+    background-color: rgba(209, 79, 90, 0.7);
 }
-
 /* Window title styling */
 #window {
     background-color: transparent;
     font-weight: 400;
     margin-left: 8px;
 }
-
 /* Clock styling */
 #clock {
-    background-color: rgba(71, 52, 25, 0.5);
+    background-color: rgba(26, 94, 99, 0.5);
     font-weight: bold;
     padding: 0 12px;
 }
-
 #clock:hover {
-    background-color: rgba(71, 52, 25, 0.7);
+    background-color: rgba(26, 94, 99, 0.7);
 }
-
 /* System modules styling */
 #battery,
 #cpu,
 #memory,
 #temperature {
-    background-color: rgba(71, 52, 25, 0.5);
+    background-color: rgba(26, 94, 99, 0.5);
     padding: 0 10px;
     margin: 4px 2px;
 }
-
 #battery {
     margin-right: 6px;
 }
-
 #battery.charging,
 #battery.plugged {
-    background-color: rgba(215, 153, 33, 0.5);
+    background-color: rgba(58, 158, 170, 0.5);
 }
-
 @keyframes blink {
     to {
-        background-color: #f5e6c9;
-        color: #1a140c;
+        background-color: #e6f5f7;
+        color: #0a2c30;
     }
 }
-
 #battery.critical:not(.charging) {
-    background-color: rgba(165, 66, 38, 0.7);
-    color: #f5e6c9;
+    background-color: rgba(209, 79, 90, 0.7);
+    color: #e6f5f7;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
 /* Network styling */
 #network {
-    background-color: rgba(73, 54, 26, 0.5);
+    background-color: rgba(18, 64, 74, 0.5);
     padding: 0 10px;
     margin: 4px 6px 4px 2px;
 }
-
 #network:hover {
-    background-color: rgba(73, 54, 26, 0.7);
+    background-color: rgba(18, 64, 74, 0.7);
 }
-
 #network.disconnected {
-    background-color: rgba(165, 66, 38, 0.7);
+    background-color: rgba(209, 79, 90, 0.7);
 }
-
 /* Audio modules styling */
 #pulseaudio,
 #custom-audio-switcher {
-    background-color: rgba(120, 90, 58, 0.5);
+    background-color: rgba(58, 94, 120, 0.5);
     padding: 0 10px;
     margin: 4px 2px;
 }
-
 #pulseaudio {
     margin-right: 6px;
 }
-
 #pulseaudio:hover,
 #custom-audio-switcher:hover {
-    background-color: rgba(120, 90, 58, 0.7);
+    background-color: rgba(58, 94, 120, 0.7);
 }
-
 #pulseaudio.muted {
-    background-color: rgba(165, 66, 38, 0.7);
+    background-color: rgba(209, 79, 90, 0.7);
 }
-
 /* Tray styling */
 #tray {
-    background-color: rgba(71, 52, 25, 0.5);
+    background-color: rgba(26, 94, 99, 0.5);
     padding: 0 10px;
     margin-left: 6px;
     border-radius: 8px;
 }
-
 #tray:hover {
-    background-color: rgba(71, 52, 25, 0.7);
+    background-color: rgba(26, 94, 99, 0.7);
 }
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
-
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #a54226;
+    background-color: #a5424a;
 }
-
 /* Keyboard layout styling */
 #custom-keyboard-layout {
-    background-color: rgba(215, 153, 33, 0.5);
+    background-color: rgba(58, 158, 170, 0.5);
     padding: 0 10px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
-
 #custom-keyboard-layout:hover {
-    background-color: rgba(215, 153, 33, 0.7);
+    background-color: rgba(58, 158, 170, 0.7);
 }
-
 #custom-keyboard-layout.en {
-    background-color: rgba(153, 114, 75, 0.5);
+    background-color: rgba(97, 137, 164, 0.5);
 }
-
 #custom-keyboard-layout.intl {
-    background-color: rgba(71, 52, 25, 0.5);
+    background-color: rgba(26, 94, 99, 0.5);
 }
-
 /* Tooltip styling */
 tooltip {
-    background-color: rgba(30, 26, 20, 0.95);
-    border: 1px solid #473419;
+    background-color: rgba(10, 44, 48, 0.95);
+    border: 1px solid #1a5e63;
     border-radius: 8px;
 }
-
 tooltip label {
-    color: #f5e6c9;
+    color: #e6f5f7;
     padding: 4px 8px;
 }
-
 /* Calendar styling */
 calendar {
-    background-color: rgba(30, 26, 20, 0.95);
-    border: 1px solid #473419;
+    background-color: rgba(10, 44, 48, 0.95);
+    border: 1px solid #1a5e63;
     border-radius: 8px;
-    color: #f5e6c9;
+    color: #e6f5f7;
     padding: 5px;
 }
-
 calendar:selected {
-    background-color: #473419;
-    color: #f5e6c9;
+    background-color: #1a5e63;
+    color: #e6f5f7;
     border-radius: 8px;
 }
-
 calendar.header {
-    color: #d79921;
+    color: #3a9eaa;
     font-weight: bold;
 }
-
 calendar.button {
-    color: #f5e6c9;
+    color: #e6f5f7;
     border-radius: 8px;
 }
-
 calendar.button:hover {
-    background-color: rgba(71, 52, 25, 0.7);
+    background-color: rgba(26, 94, 99, 0.7);
 }
-
 calendar:indeterminate {
-    color: rgba(215, 153, 33, 0.3);
+    color: rgba(58, 158, 170, 0.3);
 }

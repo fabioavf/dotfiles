@@ -1,11 +1,11 @@
-# Mako configuration file - Amber Gold Theme
+# Mako configuration file - Ocean Depths Theme
 # Notification styling
-background-color=#1a140cE6
-text-color=#f5e6c9
-border-color=#d79921
+background-color=#0a2c30E6
+text-color=#e6f5f7
+border-color=#3a9eaa
 border-size=2
 border-radius=10
-progress-color=over #d79921
+progress-color=over #3a9eaa
 # Layout
 width=350
 height=100
@@ -27,12 +27,12 @@ max-visible=5
 layer=overlay
 # Criteria-based styling (examples)
 [urgency=low]
-border-color=#78593a
+border-color=#3a5e78
 default-timeout=4000
 [urgency=normal]
-border-color=#d79921
+border-color=#3a9eaa
 default-timeout=5000
 [urgency=high]
-border-color=#a54226
-background-color=#1a140cEE
+border-color=#a5424a
+background-color=#0a2c30EE
 default-timeout=0
