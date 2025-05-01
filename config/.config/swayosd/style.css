@@ -1,14 +1,14 @@
 window#osd {
     padding: 12px 20px;
     border-radius: 999px;
-    border: 2px solid #3a9eaa;
-    background-color: rgba(9, 30, 36, 0.9);
+    border: 2px solid #7d8287;
+    background-color: rgba(16, 20, 23, 0.9);
     #container {
         margin: 16px;
     }
     image,
     label {
-        color: #e6f5f7;
+        color: #e6e8eb;
     }
     progressbar:disabled,
     image:disabled {
@@ -24,12 +24,12 @@ window#osd {
         min-height: inherit;
         border-radius: inherit;
         border: none;
-        background-color: rgba(26, 94, 99, 0.7);
+        background-color: rgba(45, 50, 55, 0.7);
     }
     progress {
         min-height: inherit;
         border-radius: inherit;
         border: none;
-        background-color: #3a9eaa;
+        background-color: #7d8287;
     }
 }

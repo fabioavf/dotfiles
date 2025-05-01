@@ -51,7 +51,7 @@ opt.undofile = true
 
 -- UI improvements
 opt.showmode = false       -- Lualine shows the mode
-opt.colorcolumn = "100"   -- Line length marker
+opt.colorcolumn = "80"   -- Line length marker
 opt.completeopt = "menuone,noselect"
 opt.conceallevel = 0
 opt.pumheight = 10        -- Pop up menu height

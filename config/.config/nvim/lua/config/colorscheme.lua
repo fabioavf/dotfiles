@@ -1,5 +1,5 @@
 -- Set up colorscheme
-vim.cmd.colorscheme "ocean-depths"
+vim.cmd.colorscheme "abyssal-horizon"
 
 -- Make background transparent
 vim.api.nvim_create_autocmd("ColorScheme", {

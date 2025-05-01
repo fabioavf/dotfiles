@@ -16,8 +16,8 @@
   "assistant": {
     "dock": "left",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-3-7-sonnet"
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-thinking-latest"
     },
     "version": "2"
   },
@@ -27,6 +27,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ocean Depths Dark"
+    "dark": "Ayu Dark"
   }
 }

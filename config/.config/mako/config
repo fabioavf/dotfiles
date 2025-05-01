@@ -1,11 +1,11 @@
-# Mako configuration file - Ocean Depths Theme
+# Mako configuration file - Abyssal Horizon Theme
 # Notification styling
-background-color=#0a2c30E6
-text-color=#e6f5f7
-border-color=#3a9eaa
+background-color=#16191eE6
+text-color=#e6e8eb
+border-color=#7d8287
 border-size=2
 border-radius=10
-progress-color=over #3a9eaa
+progress-color=over #7d8287
 # Layout
 width=350
 height=100
@@ -27,12 +27,12 @@ max-visible=5
 layer=overlay
 # Criteria-based styling (examples)
 [urgency=low]
-border-color=#3a5e78
+border-color=#3a3e45
 default-timeout=4000
 [urgency=normal]
-border-color=#3a9eaa
+border-color=#7d8287
 default-timeout=5000
 [urgency=high]
-border-color=#a5424a
-background-color=#0a2c30EE
+border-color=#696e75
+background-color=#16191eEE
 default-timeout=0

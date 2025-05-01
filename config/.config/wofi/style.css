@@ -1,43 +1,49 @@
 window {
     margin: 0px;
-    background-color: rgba(9, 30, 36, 0.85);
-    border: 2px solid rgba(58, 158, 170, 0.7);
+    background-color: rgba(16, 20, 23, 0.85);
+    border: 2px solid rgba(125, 130, 135, 0.7);
     border-radius: 12px;
     font-family: "JetBrainsMono Nerd Font", Roboto, Arial, sans-serif;
     font-size: 14px;
-    color: #e6f5f7;
+    color: #e6e8eb;
 }
+
 #input {
     margin: 15px;
     padding: 8px 15px;
     border: none;
-    color: #e6f5f7;
+    color: #e6e8eb;
     font-weight: bold;
-    background-color: rgba(26, 94, 99, 0.6);
+    background-color: rgba(45, 50, 55, 0.6);
     outline: none;
     border-radius: 8px;
     margin-bottom: 10px;
-    border-bottom: 2px solid rgba(58, 158, 170, 0.5);
+    border-bottom: 2px solid rgba(125, 130, 135, 0.5);
 }
+
 #input:focus {
-    border-bottom: 2px solid rgba(58, 158, 170, 0.9);
+    border-bottom: 2px solid rgba(170, 175, 180, 0.9);
 }
+
 #outer-box {
     margin: 0px;
     padding: 15px;
     border: none;
     border-radius: 12px;
 }
+
 #scroll {
     margin-top: 10px;
     border: none;
     border-radius: 8px;
     margin-bottom: 5px;
 }
+
 #text:selected {
-    color: #e6f5f7;
+    color: #e6e8eb;
     font-weight: bold;
 }
+
 #entry {
     padding: 8px 10px;
     margin: 2px 0px;
@@ -46,28 +52,33 @@ window {
     background-color: transparent;
     transition: all 0.2s ease;
 }
+
 #entry:selected {
     background: linear-gradient(
         90deg,
-        rgba(58, 158, 170, 0.6) 0%,
-        rgba(58, 94, 120, 0.6) 100%
+        rgba(70, 75, 80, 0.6) 0%,
+        rgba(45, 50, 55, 0.6) 100%
     );
-    border-left: 2px solid #e6f5f7;
+    border-left: 2px solid #e6e8eb;
 }
+
 #entry:hover {
-    background-color: rgba(58, 94, 120, 0.4);
+    background-color: rgba(60, 65, 70, 0.4);
 }
+
 /* Give entries some breathing room */
 #img {
     margin-right: 10px;
 }
+
 /* Style scrollbar */
 scrollbar {
-    background-color: rgba(9, 30, 36, 0.4);
+    background-color: rgba(16, 20, 23, 0.4);
     border-radius: 8px;
 }
+
 scrollbar slider {
-    background-color: rgba(58, 158, 170, 0.7);
+    background-color: rgba(125, 130, 135, 0.7);
     border-radius: 8px;
     margin: 2px;
 }

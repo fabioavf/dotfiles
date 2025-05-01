@@ -4,70 +4,70 @@ opacity = 0.85
 title = "Alacritty"
 dynamic_title = true
 startup_mode = "Windowed"
-  [window.dimensions]
-  columns = 80
-  lines = 24
-  [window.padding]
-  x = 12
-  y = 12
-  [window.class]
-  instance = "Alacritty"
-  general = "Alacritty"
+[window.dimensions]
+columns = 80
+lines = 24
+[window.padding]
+x = 12
+y = 12
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
 [scrolling]
 history = 10_000
 multiplier = 3
 [font]
 size = 12
-  [font.normal]
-  family = "JetBrainsMono Nerd Font"
-  style = "Regular"
-  [font.bold]
-  family = "JetBrainsMono Nerd Font"
-  style = "Bold"
-  [font.italic]
-  family = "JetBrainsMono Nerd Font"
-  style = "Italic"
-  [font.bold_italic]
-  family = "JetBrainsMono Nerd Font"
-  style = "Bold Italic"
-  [font.offset]
-  x = 0
-  y = 0
-  [font.glyph_offset]
-  x = 0
-  y = 0
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+[font.offset]
+x = 0
+y = 0
+[font.glyph_offset]
+x = 0
+y = 0
 [colors.primary]
-background = "#0a2c30"
-foreground = "#e6f5f7"
+background = "#16191e"
+foreground = "#e6e8eb"
 [colors.cursor]
-text = "#0a2c30"
-cursor = "#3a9eaa"
+text = "#16191e"
+cursor = "#7d8287"
 [colors.selection]
-text = "#e6f5f7"
-background = "#1a5e63"
+text = "#e6e8eb"
+background = "#2d3237"
 [colors.normal]
-black = "#0a2c30"
-red = "#a5424a"
-green = "#257d87"
-yellow = "#3a9eaa"
-blue = "#1a5e63"
-magenta = "#7390aa"
-cyan = "#3a5e78"
-white = "#e6f5f7"
+black = "#16191e"
+red = "#696e75"
+green = "#4a4e52"
+yellow = "#7d8287"
+blue = "#2d3237"
+magenta = "#5a5f66"
+cyan = "#3a3e45"
+white = "#e6e8eb"
 [colors.bright]
-black = "#12404a"
-red = "#d14f5a"
-green = "#3ca9aa"
-yellow = "#83c5d2"
-blue = "#2d7d87"
-magenta = "#7390aa"
-cyan = "#6189a4"
-white = "#f0fafb"
+black = "#23272c"
+red = "#7f8388"
+green = "#60656b"
+yellow = "#a5a8ad"
+blue = "#4a4e52"
+magenta = "#5a5f66"
+cyan = "#60656b"
+white = "#f0f1f2"
 [cursor]
 blink_interval = 750
 unfocused_hollow = true
-  [cursor.style]
-  shape = "Block"
-  blinking = "On"
+[cursor.style]
+shape = "Block"
+blinking = "On"
 [mouse]
 hide_when_typing = true
